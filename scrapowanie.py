@@ -25,6 +25,7 @@ else:
             j+=1
             markdown += "- Ratings: " + komorki[5].text + "\n"
             markdown += "- Change: " + komorki[6].text + "\n"
+            markdown += "- Picture: " + komorki[3].text +"\n"
     print(markdown)
     with open ("strona.md", 'w', encoding="utf-8") as plik:
         plik.write(markdown)
